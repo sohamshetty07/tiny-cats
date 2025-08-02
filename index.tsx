@@ -6,7 +6,7 @@
 import {GoogleGenAI, Modality} from '@google/genai';
 import {marked} from 'marked';
 
-const ai = new GoogleGenAI({apiKey: process.env.GEMINI_API_KEY});
+const ai = new GoogleGenAI({apiKey: process.env.VITE_GEMINI_API_KEY});
 
 const chat = ai.chats.create({
   model: 'gemini-2.0-flash-preview-image-generation',
